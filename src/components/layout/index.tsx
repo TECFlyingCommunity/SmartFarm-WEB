@@ -1,15 +1,12 @@
-import React from "react"
-import { MainContent } from "./styles"
+import React from "react";
+import { MainContent } from "./styles";
 
 const Layout: React.FC = ({ children }) => {
-    return (
+  return (
     <>
-     <MainContent>
-     {children}
-    
-     </MainContent>
+      <MainContent>{children}</MainContent>
     </>
-    )
-}
+  );
+};
 
-export default Layout
+export default Layout;
