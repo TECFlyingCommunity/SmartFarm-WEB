@@ -5,6 +5,7 @@ import "./estilo.css";
 import { Layout, Menu, Breadcrumb } from "antd";
 
 import Cards from "../../components/basicCards";
+import Rodape from "../../components/Footer/index";
 
 const { Header, Content, Footer } = Layout;
 const style = { background: "#0092ff", padding: "8px 0", margin: "1px 0 0 0" };
@@ -43,12 +44,6 @@ export default () => (
         <Cards />
       </div>
     </Content>
-    <Footer
-      style={{
-        textAlign: "center",
-      }}
-    >
-      SmartFarm ©2022 Created by TecFly
-    </Footer>
+    <Rodape />
   </Layout>
 );
