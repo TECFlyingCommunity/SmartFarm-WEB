@@ -247,9 +247,7 @@ const Dashboard: React.FC = () => {
               />
             </h3>
           </div>
-          <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6">
-            <Slider />
-          </div>
+        
         </div>
 
         <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full ">
@@ -271,12 +269,20 @@ const Dashboard: React.FC = () => {
               />
             </h3>
           </div>
-          <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6">
+          
+        </div>
+
+        <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full ">
+        <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6">
             <div className="w-full flex justify-center items-center">
               <button className="hover:bg-black dark:bg-white dark:text-gray-800 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 py-5 w-96 md:w-full bg-gray-800 text-base font-medium leading-4 text-white">
                 Coloque alguma coisa aqui
               </button>
             </div>
+          </div>
+
+          <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6">
+            <Slider />
           </div>
         </div>
       </main>{' '}
