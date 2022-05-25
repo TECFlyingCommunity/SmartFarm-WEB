@@ -1,7 +1,7 @@
-import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import MainLayout from "../../components/layout";
-import Dashboard from "../../pages/dashboard";
+import React from 'react'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import MainLayout from '../../components/layout'
+import Dashboard from '../../pages/dashboard'
 
 const AppRoutes: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const AppRoutes: React.FC = () => {
         </Routes>
       </MainLayout>
     </>
-  );
-};
+  )
+}
 
-export default AppRoutes;
+export default AppRoutes

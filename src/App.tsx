@@ -1,18 +1,16 @@
-import {ConfigProvider} from "antd";
-import React from "react";
-import "./App.css";
-import Routes from "./core/routes";
+import { ConfigProvider } from 'antd'
+import React from 'react'
+
+import Routes from './core/routes'
 
 function App() {
-    return (
-        <>
-                <ConfigProvider>
-                    <Routes/>
-                </ConfigProvider>             
-    
-
-        </>
-    );
+  return (
+    <>
+      <ConfigProvider>
+        <Routes />
+      </ConfigProvider>
+    </>
+  )
 }
 
-export default App;
+export default App
