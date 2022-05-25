@@ -190,8 +190,8 @@ const Dashboard: React.FC = () => {
           </li>
         </ul>
       </aside>
-      <main className="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 overflow-auto">
-        <div className="flex flex-col justify-start items-start dark:bg-gray-800 bg-gray-50 px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full bg-gradient-to-r from-green-300 to-green-500 rounded-md	">
+      <main className="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 overflow-auto ">
+        <div className="flex flex-col justify-start items-start dark:bg-gray-800 bg-gray-50 px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full bg-gradient-to-r from-green-300 to-green-500 rounded-md 	">
           <div className="mx-auto container py-12 px-4">
             <div className="w-full flex justify-center">
               <div className="w-full md:w-11/12 xl:w-10/12 bg-gradient-to-r from-emerald-500 to-emerald-700 md:py-4 md:px-4 px-3 py-2 xl:px-6 xl:py-8 rounded-md">
@@ -228,7 +228,7 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full ">
+        <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full pr-8">
           <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6 ">
             <h3 className="text-xl dark:text-white font-semibold leading-5 text-gray-800">
               <CardChart
@@ -247,10 +247,9 @@ const Dashboard: React.FC = () => {
               />
             </h3>
           </div>
-        
         </div>
 
-        <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full ">
+        <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full pr-8">
           <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6 ">
             <h3 className="text-xl dark:text-white font-semibold leading-5 text-gray-800">
               <CardChart
@@ -269,11 +268,10 @@ const Dashboard: React.FC = () => {
               />
             </h3>
           </div>
-          
         </div>
 
-        <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full ">
-        <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6">
+        <div className="flex justify-center flex-col md:flex-row flex-col items-stretch w-full pr-8">
+          <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6">
             <div className="w-full flex justify-center items-center">
               <button className="hover:bg-black dark:bg-white dark:text-gray-800 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 py-5 w-96 md:w-full bg-gray-800 text-base font-medium leading-4 text-white">
                 Coloque alguma coisa aqui
