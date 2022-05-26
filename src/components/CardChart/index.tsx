@@ -22,12 +22,24 @@ interface IConfig {
     seriesField: string,
     legend: Object,
     smooth?: boolean,
-    animation: Object,
+    // animation: Object,
     tooltip: Object,
-    xAxis: Object
+    xAxis: Object,
+    yAxis: Object,
 }
 
 const CardChart: React.FC<IProps> = ({ data,title,loading }) => {
+
+    const max = () => {
+        const valueMax: number = Math.max(...data.map((item) => item.value))
+        return (valueMax * 1.01)
+    }
+
+
+    const min = () => {
+        const valueMin: number = Math.min(...data.map((item) => item.value))
+        return  (valueMin - valueMin * 0.01)
+    }
 
     const config: IConfig = {
         data,
@@ -38,12 +50,12 @@ const CardChart: React.FC<IProps> = ({ data,title,loading }) => {
             position: 'top'
         },
         smooth: true,
-        animation: {
-            appear: {
-                animation: 'path-in',
-                duration: 5000,
-            },
-        },
+        // animation: {
+        //     appear: {
+        //         animation: 'path-in',
+        //         duration: 5000,
+        //     },
+        // },
         tooltip: {
             title: (value: string) => `Data: ${ moment(value)?.format("DD/MM/YYYY HH:mm:ss") }`,
             formatter: (value: { name: string, value: number }) => ({
@@ -56,6 +68,13 @@ const CardChart: React.FC<IProps> = ({ data,title,loading }) => {
                 formatter: (value: string) => `${ moment(value)?.format("DD/MM/YYYY-HH:mm:ss") }`,
             },
         },
+        yAxis: {
+            max: max(),
+            min: min(),
+            label: {
+                formatter: (value: any) => `${ Number(value).toFixed(2) }`,
+            }
+            }
     };
 
     return<>
